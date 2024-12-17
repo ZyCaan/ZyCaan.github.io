@@ -54,12 +54,54 @@ div.text {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.youtube {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  overflow-x: auto;
+}
+
+img.bilder {
+  width: 352px;
+  height: 198px;
+  margin: 50px;
+  border: 5px solid white;
+}
+
+div.insta {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 p {
@@ -71,6 +113,16 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0px;
   padding: 0px;
   font-family: "Lexend Deca", sans-serif;
+}
+
+img.yt-logo {
+  width: 250px;
+  height: 250px;
+}
+
+img.insta-logo {
+  width: 250px;
+  height: 250px;
 }
 
 button.menu-btn {
