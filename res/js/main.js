@@ -1,13 +1,23 @@
+function scrollToSection(section) {
+	$([document.body, document.documentElement]).animate({
+		scrollTop: $(`[data-section=${section}]`).offset().top
+	}, 1000);
+}
+
+function openSocialLink(link) {
+	window.open(link, "_blank");
+}
+
 $(function () {
 	$("#info-btn").on("click", function () {
-		$([document.body, document.documentElement]).animate({
-			scrollTop: $("#main-header").offset().top
-		}, 1000);
+		scrollToSection("info");
 	});
 
-	$("#menu-btn").on("click", function () {
-		$([document.body, document.documentElement]).animate({
-			scrollTop: 0
-		}, 1000);
+	$("#home-btn").on("click", function () {
+		scrollToSection("landing");
+	});
+
+	$("#anderes-btn").on("click", function () {
+		scrollToSection("other");
 	});
 });
