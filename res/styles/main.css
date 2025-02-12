@@ -25,89 +25,6 @@
             transform: rotateY(360deg);
   }
 }
-@media (max-width: 769px) {
-  body {
-    font-size: 14px;
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
-  }
-  .header-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 10px;
-  }
-  .logo-text.small {
-    max-width: 80%;
-  }
-  .button-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 10px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .menu-btn {
-    width: 80%;
-    font-size: 16px;
-    padding: 10px;
-  }
-  .landing .title {
-    font-size: 24px;
-    text-align: center;
-  }
-  .landing .title2 {
-    font-size: 18px;
-    text-align: center;
-  }
-  .youtube img,
-  .insta img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-  }
-  .post-embed {
-    margin: 10px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .other-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
-  .icon-container button {
-    font-size: 20px;
-  }
-  .details-container h1 {
-    font-size: 18px;
-    margin: 5px 0;
-  }
-  .details-container p {
-    font-size: 14px;
-    padding: 0 10px;
-  }
-}
 div.landing {
   width: 100%;
   height: 100vh;
@@ -182,6 +99,25 @@ div.other div.other-container {
 }
 div.other div.other-container:last-of-type {
   margin-bottom: 0px;
+}
+@media (max-width: 900px) {
+  div.other div.other-container {
+    width: 100%;
+  }
+  div.other div.other-container div.icon-container {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  div.other div.other-container div.details-container {
+    width: 100%;
+  }
+  div.other div.other-container div.details-container h1 {
+    font-size: 24px !important;
+  }
+  div.other div.other-container div.details-container p {
+    width: 100%;
+    font-size: 16px;
+  }
 }
 div.other div.other-container div.icon-container {
   width: 200px;
@@ -270,6 +206,8 @@ div.youtube {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -288,12 +226,15 @@ div.insta {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  overflow-x: auto;
 }
 
 div.post-embed {
@@ -314,6 +255,21 @@ div.post-embed {
           justify-content: center;
   border: 5px solid white;
   margin-right: 50px;
+}
+@media (max-width: 900px) {
+  div.post-embed {
+    width: 150px;
+    height: 150px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-preferred-size: 150px;
+        flex-basis: 150px;
+  }
 }
 div.post-embed a, div.post-embed img.thumbnail {
   width: 100%;
@@ -407,6 +363,34 @@ header {
   margin: 25px;
   z-index: 10;
 }
+@media (max-width: 900px) {
+  header {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  header div.header-container {
+    width: auto;
+  }
+  header div.button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  header div.button-container button {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    font-size: 17px;
+    padding: 0px;
+  }
+}
 
 main {
   background-color: #38a499;
@@ -444,6 +428,13 @@ div.container {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 50px;
+}
+@media (max-width: 900px) {
+  div.container {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    margin-bottom: 25px;
+  }
 }
 div.container div.background-box {
   position: relative;
@@ -510,4 +501,9 @@ div.header-container img.logo-text {
 h1.title {
   font-size: 120px;
   text-shadow: 0px 0px 16px rgba(0, 0, 0, 0.45);
+}
+@media (max-width: 900px) {
+  h1.title {
+    font-size: 40px;
+  }
 }
