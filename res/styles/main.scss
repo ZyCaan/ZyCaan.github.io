@@ -244,7 +244,7 @@ p {
 	margin: 0px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, {
 	margin: 0px;
 	padding: 0px;
 
@@ -460,4 +460,29 @@ h1.title {
 	@media (max-width: 900px) {
 		font-size: 40px;
 	}
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+div.impressum {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: 95%;
+}
+
+h2.ueberschrift {
+	font-size: 65px;
+}
+
+img.head-logo {
+	position: absolute;
+	width: 750px;
+	top: 50%;
+	left: 100px;
+
+	transform: translateY(-50%);
 }
