@@ -263,11 +263,36 @@ div.socials-content h1 {
 }
 div.socials-content.instagram div.social-posts div.post-item {
   width: 250px;
+  background-image: url("../img/instagram-p1.jpg");
+  background-size: 200%;
+  background-position: center center;
+}
+div.socials-content.instagram div.social-posts div.post-item:nth-child(2) {
+  background-image: url("../img/instagram-p2.jpg");
+}
+div.socials-content.instagram div.social-posts div.post-item:nth-child(3) {
+  background-image: url("../img/instagram-p3.jpg");
+}
+div.socials-content.instagram div.social-posts div.post-item:nth-child(4) {
+  background-image: url("../img/instagram-p4.jpg");
 }
 div.socials-content div.social-posts {
   position: relative;
   width: 100%;
   height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 20px;
   border-radius: 8px;
   background-color: var(--color-main-dark);
@@ -290,6 +315,12 @@ div.socials-content div.social-posts div.post-item {
 }
 div.socials-content div.social-posts div.post-item:last-of-type {
   margin-right: 0px;
+}
+div.socials-content div.social-posts div.post-item:nth-child(2) {
+  background-image: url("../img/ccc.jpg");
+}
+div.socials-content div.social-posts div.post-item:nth-child(3) {
+  background-image: url("../img/maxresdefault.jpg");
 }
 div.socials-content div.social-posts div.post-item div.post-item-overlay {
   position: absolute;

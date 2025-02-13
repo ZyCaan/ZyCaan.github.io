@@ -288,6 +288,24 @@ div.socials-content {
 		div.social-posts {
 			div.post-item {
 				width: 250px;
+
+				background-image: url("../img/instagram-p1.jpg");
+
+				background-size: 200%;
+
+				background-position: center center;
+
+				&:nth-child(2) {
+					background-image: url("../img/instagram-p2.jpg");
+				}
+
+				&:nth-child(3) {
+					background-image: url("../img/instagram-p3.jpg");
+				}
+
+				&:nth-child(4) {
+					background-image: url("../img/instagram-p4.jpg");
+				}
 			}
 		}
 	}
@@ -297,6 +315,11 @@ div.socials-content {
 
 		width: 100%;
 		height: 250px;
+
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
 
 		padding: 20px;
 
@@ -328,6 +351,15 @@ div.socials-content {
 			display: inline-block;
 
 			background-image: url("../img/ACBF.jpg");
+
+			&:nth-child(2) {
+				background-image: url("../img/ccc.jpg");
+			}
+
+			&:nth-child(3) {
+				background-image: url("../img/maxresdefault.jpg");
+			}
+
 			background-size: cover;
 
 			border-radius: 8px;
