@@ -198,7 +198,7 @@ div.other div.other-container div.details-container h1 {
 }
 
 div.youtube {
-  width: 100%;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,7 +218,7 @@ div.youtube {
 }
 
 div.insta {
-  width: 100%;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,8 +238,8 @@ div.insta {
 }
 
 div.post-embed {
-  width: 300px;
-  height: 300px;
+  width: 17vw;
+  height: 17vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,7 +254,7 @@ div.post-embed {
       -ms-flex-pack: center;
           justify-content: center;
   border: 5px solid white;
-  margin-right: 50px;
+  margin-right: 3vw;
 }
 @media (max-width: 900px) {
   div.post-embed {
@@ -297,28 +297,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 img.yt-logo {
-  width: 250px;
-  height: 250px;
+  width: 17vw;
+  height: 17vw;
 }
 
 img.insta-logo {
-  width: 250px;
-  height: 250px;
+  width: 17vw;
+  height: 17vw;
 }
 
 button.menu-btn {
   position: relative;
   font-family: "Dongle", sans-serif;
-  font-size: 28px;
-  width: 105px;
-  height: 35px;
-  text-align: center;
-  line-height: 35px;
+  font-size: 2vw;
+  width: 7vw;
+  height: 2.5vw;
+  line-height: 0.5vw;
   border-color: white;
   border-radius: 8px;
   color: white;
   background-color: #39b6aa;
-  margin: 5px;
+  margin: 0.3vw;
   cursor: pointer;
   -webkit-transition: background-color 0.25s;
   transition: background-color 0.25s;
@@ -334,7 +333,7 @@ button.menu-btn:hover {
 html, body, main {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100vw;
   margin: 0px;
 }
 
