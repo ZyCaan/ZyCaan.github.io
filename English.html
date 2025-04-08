@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="res/styles/main.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/4419b7770f.js" crossorigin="anonymous"></script>
+    <script src="res/js/main.js"></script>
+
+    <title>English Socials</title>
+</head>
+<body>
+
+
+<header id="Home">
+    <div class="header-container">
+        <img class="logo-text small" src="res/img/willkommen-text.png">
+    </div>
+
+    <div class="button-container">
+        <button id="home-btn" class="menu-btn">
+            Home
+        </button>
+
+        <button id="info-btn" class="menu-btn">
+            Info
+        </button>
+
+        <button id="anderes-btn" class="menu-btn">
+            Anderes
+        </button>
+
+        <button id="impressum-btn" class="menu-btn">
+            <a href="impressum.html">
+                Impressum
+            </a>
+        </button>
+
+        <button id="Deutsch-btn" class="menu-btn">
+            <a href="index.html ">
+                Deutsch
+            </a>
+        </button>
+    </div>
+</header>
+
+<main>
+    <div class="landing" data-section="landing">
+        <div class="container">
+            <div class="background-box"></div>
+
+            <img class="logo" src="res/img/zycan-logo-tran.png" alt="Logo">
+        </div>
+
+        <h5 class="est"> Est. 2023 </h5>
+        <h1 class="title">WELCOME</h1>
+        <h2 class="title2"> To ZyCans International Socials</h2>
+    </div>
+
+    <div id="main-header" class="info" data-section="info">
+
+        <div class="youtube">
+            <a href="https://www.youtube.com/@zycanyt">
+                <img class="yt-logo" src="res/img/YouTube.png">
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=f2EaMY46WTo&t=181s">
+                <img class="bilder" src="res/img-en/CREATE1.jpg">
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=zJPN8xJrdEk">
+                <img class="bilder" src="res/img-en/Addon1.jpg">
+            </a>
+
+            <!--
+
+            Für Zukünftige Einträge freihalten
+
+            <a href="">
+                <img class="bilder" src="res/img/YouTube.png">
+            </a>
+
+            <a href="">
+                <img class="bilder" src="res/img/YouTube.png">
+            </a>
+
+
+            <a href="">
+                <img class="bilder" src="res/img/YouTube.png">
+            </a>
+
+            -->
+
+
+        </div>
+
+        <div class="insta">
+            <!--
+            <div class="post-embed">
+                <a href="https://www.instagram.com/reel/CxSNDXFNQhy/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
+                    <img class="thumbnail" src="res/img/instagram-p4.jpg">
+                </a>
+            </div>
+
+            <div class="post-embed">
+                <a href="https://www.instagram.com/reel/C3XlF-3NbIp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
+                    <img class="thumbnail" src="res/img/instagram-p3.jpg">
+                </a>
+            </div>
+
+            <div class="post-embed">
+                <a href="https://www.instagram.com/p/DB1I0c6tV6s/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
+                    <img class="thumbnail" src="res/img/instagram-p2.jpg">
+                </a>
+            </div>
+
+            <div class="post-embed">
+                <a href="https://www.instagram.com/reel/C8bTk5ntlqk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
+                    <img class="thumbnail" src="res/img/instagram-p1.jpg">
+                </a>
+
+            </div>
+-->
+            <div class="insta">
+                <a href="https://www.instagram.com/zycan_en?igsh=OGdsOW5iZHBlNGs2/">
+                    <img class="insta-logo" src="res/img/Insta.png"> </a>
+            </div>
+
+       </div>
+
+
+
+
+
+    </div>
+
+    <div class="other" data-section="other">
+        <div class="other-container">
+            <div class="icon-container">
+                <button onclick="openSocialLink('https://github.com/ZyCaan')">
+                    <i class="fab fa-github"></i>
+                </button>
+            </div>
+
+            <div class="details-container">
+                <h1>
+                    GitHub
+                </h1>
+
+                <p>
+                    ZyCan does a little bit UI design and HTLM coding in his free time, if you want to see that, Check his github out
+                </p>
+            </div>
+        </div>
+
+        <div class="other-container">
+            <div class="icon-container">
+                <button onclick="openSocialLink('https://steamcommunity.com/id/ZyCan_/')">
+                    <i class="fab fa-steam"></i>
+                </button>
+            </div>
+
+            <div class="details-container">
+                <h1>
+                    Steam
+                </h1>
+
+                <p>
+                    Here You can look at ZyCan's Favorite games, rarest Achievements and maybe
+                    he will trade with him if you ask him to!
+
+                </p>
+            </div>
+        </div>
+
+        <div class="other-container">
+            <div class="icon-container">
+                <button onclick="openSocialLink('https://ko-fi.com/zycan_')">
+                    <i class="fas fa-ko-fi"></i>
+                </button>
+            </div>
+
+            <div class="details-container">
+                <h1>
+                    KoFi
+                </h1>
+
+                <p>
+                    The classic "Buy me a Coffee" if you want to support me and my work and Enjoy what i do, feel free do donate! It helps A HUGE amount
+                </p>
+            </div>
+        </div>
+
+        <!-- Freihalten für Patreon
+        <div class="other-container">
+            <div class="icon-container">
+                <button onclick="openSocialLink('https://patreon.com/zycan')">
+                    <i class="fab fa-patreon"></i>
+                </button>
+            </div>
+
+
+
+            <div class="details-container">
+                <h1>
+                    Patreon
+                </h1>
+
+                <p>
+                    Ihr Wollt ZyCans Arbeit unterstützten und alle seine Videos Runterladen?
+                    Dann seit ihr bei Patreon richtig! Hier könnt ihr für kleines Geld Spenden
+                    und Bonus Content erhalten
+                </p>
+            </div>
+            -->
+        </div>
+    </div>
+
+    <p>&nbsp</p>
+    <h5>Copyright ZyCan 2025&copy;, All rights Reserved</h5>
+    <p>&nbsp</p>
+
+
+</main>
+
+
+</body>
+
+</html>
